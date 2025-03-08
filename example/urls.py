@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import index_page
+from .views import index  # Import your view function
 
 urlpatterns = [
-    path('', index_page, name='index'),
+    path('', index, name='index_page'),  # Ensure name matches what is used in the template
 ]
